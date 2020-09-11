@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Amiri', serif;
+    /* font-family: 'Solway', serif; */
+    line-height: 1.5;
+}
 #contenitore {
     width: 80%;
     height: 100vh;
@@ -51,7 +56,8 @@ a {
 }
 #bottom-header img {
     display: inline-block;
-    max-width: 15%;
+    max-width: 50%;
+    max-height: 100%;
 
 }
 #bottom-header ul li {
@@ -187,8 +193,12 @@ a:hover {
 }
 #brand-logo img {
     width: 20%;
+    padding: 0 10px;
     height: 50%;
     float: left;
+}
+.counter h2 {
+    text-align: center;
 }
 footer {
     width: 100%;
