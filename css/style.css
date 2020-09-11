@@ -8,7 +8,7 @@
     height: 100vh;
     margin: auto;
 
-    /* background-color: red; */
+    background-color: red;
 }
 /* struttura header */
 header {
@@ -25,7 +25,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: white;
+    z-index: 5;
+
 
 }
 #subcontenitore {
@@ -51,21 +52,68 @@ header {
 #bottom-header ul li {
     display: inline-block;
     float:right;
+    line-height: 2;
+    margin-right: 10px;
 }
+#switch-lingua ul li {
+    display: inline-block;
+    float:left;
+    line-height: 2;
+    margin-right: 10px;
+    border-right: 1 solid black;
+}
+#menu-login {
+    float: right;
+}
+/* Fine header ed inizio parte centrale */
 #principale {
     min-height: 300px;
     background: lightpink;
 }
+
+
 #opzioni {
     width: 100%;
     min-height: 300px;
     background: pink;
 }
+
+.calltoaction {
+    width: 50%;
+    float: left;
+    background: orange;
+    border: 1px solid black;
+}
+.calltoaction h1 {
+    text-align: center;
+}
+
+.calltoaction p {
+
+    line-height: 1.5;
+}
+/* sfondo sezione principale */
+.mainbg {
+    float: left;
+}
+
+
 /* Menu boxati */
 #customers {
     width: 100%;
     min-height: 300px;
     background: purple;
+}
+ul a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 10px;
+}
+a:hover {
+    background: white;
+
 }
 footer {
     width: 100%;
