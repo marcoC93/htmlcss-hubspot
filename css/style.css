@@ -15,7 +15,7 @@ body {
     line-height: 1.5;
 }
 #contenitore {
-    width: 80%;
+    width: 100%;
     height: 100vh;
     margin: auto;
 
@@ -24,10 +24,18 @@ body {
 /* struttura header */
 header {
     width: 100%;
-    height: 100px;
-    position: relative;
+    min-height: 100px;
+    /* position: relative; */
     /* background: orange; */
+
 }
+header::after {
+    content: '';
+    clear: both;
+    display: table;
+
+}
+
 #top-header {
     width: 100%;
     height: 50%;
@@ -43,8 +51,22 @@ header {
 .subcontenitore {
     width: 80%;
     margin: auto;
+    position: relative;
     /* background: red; */
-    height: 50px
+    /* height: 50px */
+}
+.subcontenitore::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar{
+    display: block;
+}
+.navbar::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 a {
     text-decoration: none;
@@ -58,13 +80,21 @@ a {
     height: 50%;
     /* background: blue; */
     position: absolute;
-    bottom: 0;
+    top: 50px;
 }
-#bottom-header img {
+.navbar img {
     display: inline-block;
     max-width: 50%;
-    max-height: 100%;
+    max-height: 40px;
 
+}
+.navbar p {
+
+}
+.navbar::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 #bottom-header ul li {
     display: inline-block;
@@ -107,9 +137,9 @@ a {
 
 }
 #promo {
-    background: #425b76;
     width: 100%;
     padding: 20px;
+    background: #425b76;
 }
 /* Fine header ed inizio parte centrale */
 #principale {
@@ -282,7 +312,7 @@ ul {
 }
 #brand-logo {
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     background: rgba(34,133,199,0);
     float: left;
 }
