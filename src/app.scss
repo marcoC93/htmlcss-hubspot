@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Amiri', serif;
+    font-family: 'AvenirNext' , serif;
+    line-height: 1.5;
+    #contenitore {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    header {
+        width: 100%;
+        min-height: 100px;
+
+        header::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+        #top-header {
+            width: 100%;
+            height: 50%;
+            max-height: 50px;
+            background: #F5F8FA ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            #switch-lingua ul li {
+                display: inline-block;
+                float:left;
+                line-height: 2;
+                margin-right: 10px;
+                border-right: 1 solid black;
+            }
+            #menu-login {
+                float: right;
+                margin: 5px 0 ;
+            }
+            #search-button {
+                display: inline-block;
+                color: lightblue;
+            }
+            #search-button:hover {
+                background: white;
+
+            }
+        }
+        .subcontenitore {
+            width: 80%;
+            margin: auto;
+            position: relative;
+            .subcontenitore::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            .navbar{
+                display: block;
+                .navbar::after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        #bottom-header {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 50px;
+            .navbar img {
+                display: inline-block;
+                max-width: 50%;
+                max-height: 40px;
+
+            }
+            .navbar p {
+
+            }
+            .navbar::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    float:right;
+                    line-height: 2;
+                    margin-right: 10px;
+                }
+            }
+            & a:hover{
+                background: #ff7a59;
+                color: white;
+            }
+
+        }
+        .button a {
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+            padding: 10px 20px ;
+            background: #ff7a59;
+            border-radius: 2px;
+
+        }
+    }
+    /* Fine header ed inizio parte centrale */
+
+    main {
+        #promo {
+            width: 100%;
+            padding: 20px;
+            background: #425b76;
+        }
+        #principale {
+            min-height: 300px;
+            background: linear-gradient(to top right,#fef8f0,#fff3ee,#fff1ee);
+            #principale::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+        #opzioni {
+            width: 100%;
+            min-height: 300px;
+            background: #F5F8FA;
+            #opzioni::after
+            {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+        .calltoaction {
+            width: 50%;
+            float: left;
+            h1 {
+                text-align: center;
+            }
+            p {
+                line-height: 1.5;
+            }
+        }
+        /* sfondo sezione principale */
+        .mainbg {
+            width: 100% ;
+            float: left;
+            img {
+                float: right;
+                 position: absolute;
+                bottom: 0;
+                right: 0;
+                height: auto;
+                z-index: -1;
+            }
+        }
+        /* Centratura bottone schermata   */
+       .calltoaction span {
+           width: 100%;
+           display: inline-block;
+           text-align: center;
+       }
+       /* Menu boxati */
+       .box {
+           width: calc(50% - 20px);
+           padding: 10px;
+           margin: 10px ;
+
+           float: left;
+           background: white;
+           border-radius: 2px;
+           .box::after {
+               content: '';
+               display: table;
+               clear: both;
+           }
+           span {
+               display: inline-block;
+               width: 100%;
+               text-align: center;
+           }
+       }
+       /* sezione risultati */
+       #customers {
+           width: 100%;
+           min-height: 300px;
+           background: linear-gradient(45deg,#00a4bd,#00bda5);
+           h2 {
+               text-align: center;
+               color: white;
+               margin-top: 10px;
+           }
+           p {
+               text-align: center;
+               padding: 5px;
+               margin-bottom: 10px;
+               margin: 0 auto;
+               width: 80%;
+               color: white;
+           }
+        }
+        .box-risultati {
+            width: 80%;
+            margin: 0 auto;
+            min-height: 400px;
+
+
+        }
+        .risultato {
+            width: 25%;
+            height:50%;
+            float: left;
+        }
+        .icon {
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            font-family: "Font Awesome 5 Free";
+            display: inline-block;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 5px;
+        }
+        ul a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.5em;
+            width: 100%;
+            padding: 10px;
+        }
+        .button a:hover {
+            background-color:  #ffbcac;
+            color: #ff7a59;
+
+        }
+        .box hr {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        #brands {
+            width: 100%;
+            padding: 30px;
+            background: #F5F8FA;
+
+            #brands::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+        .counter {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        .counter::after {
+            content: '';
+            display: table;
+            clear: both;
+
+        }
+        #brand-logo {
+            width: 50%;
+            background: rgba(34,133,199,0);
+            float: left;
+            #brand-logo::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            img {
+                width: 25%;
+                padding: 0 10px;
+                height: 50%;
+                float: left;
+            }
+        }
+        .counter h2 {
+            text-align: center;
+        }
+    }
+    /* Footer */
+    footer {
+        width: 100%;
+        min-height: 300px;
+        background: #33475b;
+        clear: both;
+        color: white ;
+        .lista-footer {
+                ul {
+                    width: 30%;
+                    margin: 20px auto;
+                    list-style-type: none;
+                    float: left;
+                    color: white;
+                    line-height: 2;
+                    li {
+                        color: #CBD6E2;
+                    }
+                }
+                h3 {
+                    color: white;
+                }
+            }
+        .lista-social {
+            ul {
+                li {
+                    padding: 20px 10px;
+                    display: inline-block;
+                    clear: both;
+                    list-style-type: none;
+                }
+            }
+            #facebook-logo {
+                color: #3b5998;
+            }
+            #instagram-logo {
+                color: #e1306c;
+            }
+            #linkedin-logo {
+                color: #0077b5;
+            }
+        }
+        a {
+            background: transparent;
+        }
+    }
+}
